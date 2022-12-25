@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iron_dictionary_nosu/home_page/components/favorites_page.dart';
+import 'package:iron_dictionary_nosu/favorites_page/favorites_page.dart';
 import 'package:provider/provider.dart';
 
 import 'home_page/home_page.dart';
@@ -10,6 +10,7 @@ void main() {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(
+          lazy: true,
           create: (_) => HomePageModel(),
         ),
       ],

@@ -1,14 +1,14 @@
 class Word {
-  Word(this.word, this.translate, this.example, this.isFavorite);
+  Word(this.word, this.translate, this.example, this.isFavourite);
 
   String word;
   List<String> translate;
 
   List<String> example;
 
-  bool isFavorite;
+  bool isFavourite;
 
-  void addToFavorite() {
-    isFavorite = !isFavorite;
+  void addTofavourite() {
+    isFavourite = !isFavourite;
   }
 }
